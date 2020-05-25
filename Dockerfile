@@ -1,8 +1,8 @@
 FROM node:12
 USER node
-RUN mkdir /home/node/node-template
-COPY . /home/node/node-template/
-WORKDIR /home/node/node-template
+RUN mkdir /home/node/express-template
+COPY . /home/node/express-template/
+WORKDIR /home/node/express-template
 RUN npm install --no-audit --only=production
 EXPOSE 3030
 ENV NODE_ENV=production
