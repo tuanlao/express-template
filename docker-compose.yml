@@ -16,7 +16,7 @@ services:
     volumes:
       - type: bind
         source: .
-        target: /home/node/node-template
+        target: /home/node/express-template
   mongodb:
     image: mongo:4.2.3
     ports:
